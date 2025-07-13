@@ -50,8 +50,8 @@ struct ContentView: View {
     private func enableMetronome() {
         isRunning.toggle()
         if isRunning {
-            startTick()
             session?.start()
+            startTick()
         } else {
             timer?.invalidate()
             timer = nil
