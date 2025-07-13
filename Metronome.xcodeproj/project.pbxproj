@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B108CD1E2E237601004D46DB /* Metronome Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B108CD1D2E237601004D46DB /* Metronome Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B108CD1F2E237601004D46DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B108CD112E237600004D46DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B108CD1C2E237601004D46DB;
+			remoteInfo = "Metronome Watch App";
+		};
+		B108CD2D2E237602004D46DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B108CD112E237600004D46DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B108CD1C2E237601004D46DB;
+			remoteInfo = "Metronome Watch App";
+		};
+		B108CD372E237602004D46DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B108CD112E237600004D46DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B108CD1C2E237601004D46DB;
+			remoteInfo = "Metronome Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B108CD432E237602004D46DB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B108CD1E2E237601004D46DB /* Metronome Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B108CD172E237601004D46DB /* Metronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B108CD1D2E237601004D46DB /* Metronome Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Metronome Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B108CD2C2E237602004D46DB /* Metronome Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Metronome Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B108CD362E237602004D46DB /* Metronome Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Metronome Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B108CD212E237601004D46DB /* Metronome Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Metronome Watch App";
+			sourceTree = "<group>";
+		};
+		B108CD2F2E237602004D46DB /* Metronome Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Metronome Watch AppTests";
+			sourceTree = "<group>";
+		};
+		B108CD392E237602004D46DB /* Metronome Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Metronome Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B108CD1A2E237601004D46DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B108CD292E237602004D46DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B108CD332E237602004D46DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B108CD102E237600004D46DB = {
+			isa = PBXGroup;
+			children = (
+				B108CD212E237601004D46DB /* Metronome Watch App */,
+				B108CD2F2E237602004D46DB /* Metronome Watch AppTests */,
+				B108CD392E237602004D46DB /* Metronome Watch AppUITests */,
+				B108CD182E237601004D46DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B108CD182E237601004D46DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B108CD172E237601004D46DB /* Metronome.app */,
+				B108CD1D2E237601004D46DB /* Metronome Watch App.app */,
+				B108CD2C2E237602004D46DB /* Metronome Watch AppTests.xctest */,
+				B108CD362E237602004D46DB /* Metronome Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B108CD162E237601004D46DB /* Metronome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B108CD442E237602004D46DB /* Build configuration list for PBXNativeTarget "Metronome" */;
+			buildPhases = (
+				B108CD152E237601004D46DB /* Resources */,
+				B108CD432E237602004D46DB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B108CD202E237601004D46DB /* PBXTargetDependency */,
+			);
+			name = Metronome;
+			packageProductDependencies = (
+			);
+			productName = Metronome;
+			productReference = B108CD172E237601004D46DB /* Metronome.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		B108CD1C2E237601004D46DB /* Metronome Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B108CD402E237602004D46DB /* Build configuration list for PBXNativeTarget "Metronome Watch App" */;
+			buildPhases = (
+				B108CD192E237601004D46DB /* Sources */,
+				B108CD1A2E237601004D46DB /* Frameworks */,
+				B108CD1B2E237601004D46DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B108CD212E237601004D46DB /* Metronome Watch App */,
+			);
+			name = "Metronome Watch App";
+			packageProductDependencies = (
+			);
+			productName = "Metronome Watch App";
+			productReference = B108CD1D2E237601004D46DB /* Metronome Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B108CD2B2E237602004D46DB /* Metronome Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B108CD472E237602004D46DB /* Build configuration list for PBXNativeTarget "Metronome Watch AppTests" */;
+			buildPhases = (
+				B108CD282E237602004D46DB /* Sources */,
+				B108CD292E237602004D46DB /* Frameworks */,
+				B108CD2A2E237602004D46DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B108CD2E2E237602004D46DB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B108CD2F2E237602004D46DB /* Metronome Watch AppTests */,
+			);
+			name = "Metronome Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "Metronome Watch AppTests";
+			productReference = B108CD2C2E237602004D46DB /* Metronome Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B108CD352E237602004D46DB /* Metronome Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B108CD4A2E237602004D46DB /* Build configuration list for PBXNativeTarget "Metronome Watch AppUITests" */;
+			buildPhases = (
+				B108CD322E237602004D46DB /* Sources */,
+				B108CD332E237602004D46DB /* Frameworks */,
+				B108CD342E237602004D46DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B108CD382E237602004D46DB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B108CD392E237602004D46DB /* Metronome Watch AppUITests */,
+			);
+			name = "Metronome Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "Metronome Watch AppUITests";
+			productReference = B108CD362E237602004D46DB /* Metronome Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B108CD112E237600004D46DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					B108CD162E237601004D46DB = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					B108CD1C2E237601004D46DB = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					B108CD2B2E237602004D46DB = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = B108CD1C2E237601004D46DB;
+					};
+					B108CD352E237602004D46DB = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = B108CD1C2E237601004D46DB;
+					};
+				};
+			};
+			buildConfigurationList = B108CD142E237600004D46DB /* Build configuration list for PBXProject "Metronome" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B108CD102E237600004D46DB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B108CD182E237601004D46DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B108CD162E237601004D46DB /* Metronome */,
+				B108CD1C2E237601004D46DB /* Metronome Watch App */,
+				B108CD2B2E237602004D46DB /* Metronome Watch AppTests */,
+				B108CD352E237602004D46DB /* Metronome Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B108CD152E237601004D46DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B108CD1B2E237601004D46DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B108CD2A2E237602004D46DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B108CD342E237602004D46DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B108CD192E237601004D46DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B108CD282E237602004D46DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B108CD322E237602004D46DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B108CD202E237601004D46DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B108CD1C2E237601004D46DB /* Metronome Watch App */;
+			targetProxy = B108CD1F2E237601004D46DB /* PBXContainerItemProxy */;
+		};
+		B108CD2E2E237602004D46DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B108CD1C2E237601004D46DB /* Metronome Watch App */;
+			targetProxy = B108CD2D2E237602004D46DB /* PBXContainerItemProxy */;
+		};
+		B108CD382E237602004D46DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B108CD1C2E237601004D46DB /* Metronome Watch App */;
+			targetProxy = B108CD372E237602004D46DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B108CD3E2E237602004D46DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = X75P8D82PU;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B108CD3F2E237602004D46DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = X75P8D82PU;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		B108CD412E237602004D46DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X75P8D82PU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Metronome;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kaumah.github.io.Metronome.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Debug;
+		};
+		B108CD422E237602004D46DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X75P8D82PU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Metronome;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kaumah.github.io.Metronome.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Release;
+		};
+		B108CD452E237602004D46DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X75P8D82PU;
+				INFOPLIST_KEY_CFBundleDisplayName = Metronome;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kaumah.github.io.Metronome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B108CD462E237602004D46DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X75P8D82PU;
+				INFOPLIST_KEY_CFBundleDisplayName = Metronome;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kaumah.github.io.Metronome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B108CD482E237602004D46DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X75P8D82PU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kaumah.github.io.Metronome-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Metronome Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Metronome Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Debug;
+		};
+		B108CD492E237602004D46DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X75P8D82PU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kaumah.github.io.Metronome-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Metronome Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Metronome Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Release;
+		};
+		B108CD4B2E237602004D46DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X75P8D82PU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kaumah.github.io.Metronome-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Metronome Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Debug;
+		};
+		B108CD4C2E237602004D46DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X75P8D82PU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kaumah.github.io.Metronome-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Metronome Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B108CD142E237600004D46DB /* Build configuration list for PBXProject "Metronome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B108CD3E2E237602004D46DB /* Debug */,
+				B108CD3F2E237602004D46DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B108CD402E237602004D46DB /* Build configuration list for PBXNativeTarget "Metronome Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B108CD412E237602004D46DB /* Debug */,
+				B108CD422E237602004D46DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B108CD442E237602004D46DB /* Build configuration list for PBXNativeTarget "Metronome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B108CD452E237602004D46DB /* Debug */,
+				B108CD462E237602004D46DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B108CD472E237602004D46DB /* Build configuration list for PBXNativeTarget "Metronome Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B108CD482E237602004D46DB /* Debug */,
+				B108CD492E237602004D46DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B108CD4A2E237602004D46DB /* Build configuration list for PBXNativeTarget "Metronome Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B108CD4B2E237602004D46DB /* Debug */,
+				B108CD4C2E237602004D46DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B108CD112E237600004D46DB /* Project object */;
+}
