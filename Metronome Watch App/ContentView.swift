@@ -8,56 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var beatsPerMinute: Double = 60
-    @State private var isRunning: Bool = false
-    @State private var timer: Timer?
-    @State private var session: WKExtendedRuntimeSession?
+    @ObservedObject private var metronomeManager = MetronomeManager()
     
     var body: some View {
         VStack {
-            Text("BPM: \(Int(beatsPerMinute))")
+            Text("BPM: \(Int(floor(metronomeManager.bpm)))")
             Button(action: {
-                enableMetronome()
+                metronomeManager.toggleMetronome()
             }) {
-                Text(isRunning ? "Stop" : "Start").frame(width: 100)
+                Text(metronomeManager.isRunning ? "Stop" : "Start").frame(width: 100)
             }.buttonStyle(.borderedProminent)
         }.focusable(true)
             .digitalCrownRotation(
-                $beatsPerMinute,
+                $metronomeManager.bpm,
                 from: 20,
                 through: 200,
                 by: 1,
                 sensitivity: .medium,
                 isHapticFeedbackEnabled: true
-            ).onChange(of: beatsPerMinute) {
-                if isRunning {
-                    restartTick()
-                }
+            ).onChange(of: metronomeManager.bpm) {
+                metronomeManager.stopMetronome()
             }
         .padding()
     }
-    private func startTick() {
-        let interval = 60.0 / beatsPerMinute
-        timer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { _ in
-            WKInterfaceDevice.current().play(.start)
-        }
-        
-    }
-    private func restartTick() {
-        timer?.invalidate()
-        startTick()
-    }
-    private func enableMetronome() {
-        isRunning.toggle()
-        if isRunning {
-            session?.start()
-            startTick()
-        } else {
-            timer?.invalidate()
-            timer = nil
-            session?.invalidate()
-        }
-    }
+    
+    
 }
 
 
