@@ -12,8 +12,9 @@ class MetronomeManager: NSObject, ObservableObject  {
     @Published var bpm: Double = 80
     @Published var shouldFlash: Bool = false
     
-    private var timer: Timer?
     private var session: WKExtendedRuntimeSession?
+    private var beatTimer: DispatchSourceTimer?
+    
     
     func toggleMetronome() {
         isRunning.toggle()
@@ -27,9 +28,9 @@ class MetronomeManager: NSObject, ObservableObject  {
     }
     
     func restartMetronome() {
-        if timer != nil {
-            timer?.invalidate()
-            timer = nil
+        if beatTimer != nil {
+            beatTimer?.cancel()
+            beatTimer = nil
         }
         if session != nil {
             session?.invalidate()
@@ -39,8 +40,12 @@ class MetronomeManager: NSObject, ObservableObject  {
     }
     
     func stopMetronome() {
-        if session == nil || timer == nil {return}
-        timer?.invalidate()
+        if session == nil || beatTimer == nil {return}
+        if let timer = beatTimer {
+                timer.setEventHandler {} // remove handler
+                timer.cancel()
+                beatTimer = nil
+            }
         session?.invalidate()
         isRunning = false
     }
@@ -50,28 +55,51 @@ class MetronomeManager: NSObject, ObservableObject  {
 extension MetronomeManager: WKExtendedRuntimeSessionDelegate {
     func extendedRuntimeSession(_ extendedRuntimeSession: WKExtendedRuntimeSession, didInvalidateWith reason: WKExtendedRuntimeSessionInvalidationReason, error: Error?, ) {
         extendedRuntimeSession.invalidate()
-        timer?.invalidate()
-        timer = nil
+        if let timer = beatTimer {
+                timer.cancel()
+                beatTimer = nil
+            }
         
     }
     
     func extendedRuntimeSessionDidStart(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
         let interval = 60.0 / floor(bpm)
-        timer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { _ in
-            WKInterfaceDevice.current().play(.start)
+        let queue = DispatchQueue(label: "com.metronome.timer")
+        
+        beatTimer = DispatchSource.makeTimerSource(queue: queue)
+        beatTimer?.schedule(deadline: .now(), repeating: interval, leeway: .microseconds(1))
+        beatTimer?.setEventHandler { [weak self] in
+            guard let self = self else {return}
+            
             DispatchQueue.main.async {
+                WKInterfaceDevice.current().play(.start)
                     self.shouldFlash = true
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                         self.shouldFlash = false
                     }
                 }
         }
+        beatTimer?.resume()
+//        timer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { _ in
+//            WKInterfaceDevice.current().play(.directionUp)
+//            DispatchQueue.main.async {
+//                    self.shouldFlash = true
+//                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+//                        self.shouldFlash = false
+//                    }
+//                }
+//        }
         
     }
     
     func extendedRuntimeSessionWillExpire(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
         extendedRuntimeSession.invalidate()
-        timer?.invalidate()
-        timer = nil
+//        timer?.invalidate()
+//        timer = nil
+        if let timer = beatTimer {
+                timer.setEventHandler {} // remove handler
+                timer.cancel()
+                beatTimer = nil
+            }
     }
 }
