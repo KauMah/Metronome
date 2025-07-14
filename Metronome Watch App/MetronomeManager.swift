@@ -10,6 +10,7 @@ import Foundation
 class MetronomeManager: NSObject, ObservableObject  {
     @Published var isRunning: Bool = false
     @Published var bpm: Double = 80
+    @Published var shouldFlash: Bool = false
     
     private var timer: Timer?
     private var session: WKExtendedRuntimeSession?
@@ -58,6 +59,12 @@ extension MetronomeManager: WKExtendedRuntimeSessionDelegate {
         let interval = 60.0 / floor(bpm)
         timer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { _ in
             WKInterfaceDevice.current().play(.start)
+            DispatchQueue.main.async {
+                    self.shouldFlash = true
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        self.shouldFlash = false
+                    }
+                }
         }
         
     }
